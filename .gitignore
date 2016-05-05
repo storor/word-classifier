@@ -1,0 +1,18 @@
+#Node
+node_modules/
+node/
+
+#Test reports
+TESTS-*.xml
+
+#Target
+target/
+
+#Istanbul
+coverage/
+
+#Legacy
+dist/
+
+#Bower
+bower_components/

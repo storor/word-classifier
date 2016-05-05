@@ -1,0 +1,24 @@
+{
+  "name": "word-classifier",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Solution for JS Challenge Spring 2016: Word Classifier",
+  "main": "classifier.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storor/word-classifier.git"
+  },
+  "author": "storor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storor/word-classifier/issues"
+  },
+  "homepage": "https://github.com/storor/word-classifier#readme",
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-eslint": "^3.0.0"
+  }
+}
