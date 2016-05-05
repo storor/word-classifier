@@ -19,6 +19,12 @@
   "homepage": "https://github.com/storor/word-classifier#readme",
   "devDependencies": {
     "eslint": "^2.9.0",
-    "eslint-config-eslint": "^3.0.0"
+    "eslint-config-eslint": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-minify": "0.0.11",
+    "gulp-size": "^2.1.0"
   }
 }
