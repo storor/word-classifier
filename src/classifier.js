@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = {
   /**
   This export is optional.
@@ -19,3 +21,12 @@ function init(buffer){
 function test(word){
   return true;
 }
+ 
+
+function multiply(a, b){
+  return a.map( ai => b[0].map((el, j) => ai.reduce( (summ, aik, k) => summ + aik * b[k][j], 0)));
+}
+
+//test
+module.exports.multiply = multiply;
+//endtest

@@ -2,7 +2,9 @@ var gulp= require("gulp"),
   jasmine = require("gulp-jasmine"),
   istanbul = require("gulp-istanbul"),
   eslint = require("gulp-eslint"),
-  minify = require("gulp-minify"),
+  uglify = require("uglify-js"),
+  minify = require("gulp-uglify/minifier"),
+  replace = require("gulp-replace"),
   size = require("gulp-size");
 
 var sources = [
@@ -25,7 +27,12 @@ gulp.task("test", ["lint"], function(){
 
 gulp.task("minify", function(){
   return gulp.src(sources)
-    .pipe(minify())
+    .pipe(size({
+      showFiles: true,
+      showTotal: false
+    }))
+    .pipe(replace(/\/\/test[\s\S]*\/\/endtest/g, ''))
+    .pipe(minify(null, uglify))
     .pipe(size({
       showFiles: true,
       showTotal: false
